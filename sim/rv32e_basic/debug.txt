@@ -1,0 +1,49 @@
+bootUCX/OS v0.97 boot on RV32E (HF-RISCV-E)
+heap_init(), 16948 bytes free
+task 0: 0x40000588, stack: 0x40003688, size 2048
+[TDES_DRIVER]: Driver ligado
+ [APP_MAIN] Pre-calculo:
+- Tamanho original:  43 bytes
+- Blocos completos:        5
+- Bytes de padding:        5
+- Total final (criptografado): 48 bytes (6 blocos)
+------------------------------- INICIO ---------------------------------
+--
+
+
+-------------------------------------------------------------------
+ 	MODO DE OPERACAO: <<<<<<<<<<<<EBC>>>>>>>>>>>>>>>
+ 	-------------------------------------------------------------------
+
+[APP_MAIN] TEXTO ORIGINAL: 
+the quick brown fox jumps over the lazy dog
+
+40003570                          74 68 65 20 71 75 69 63  |........the 
+quic|
+40003580 6B 20 62 72 6F 77 6E 20  66 6F 78 20 6A 75 6D 70  |k brown fox 
+jump|
+40003590 73 20 6F 76 65 72 20 74  68 65 20 6C 61 7A 79 20  |s over the l
+azy |
+[TDES_DRIVER]: Usuario atual: 65535
+[TDES_DRIVER]: Usuario que chamou: 0
+
+[APP_MAIN] TEXTO CIFRADO: 
+
+400034D0                                      8D 26 F6 0B  |.....5.@.5.@
+.&..|
+400034E0 82 C1 A9 AA 6D E0 11 15  2B 1D EF 99 54 1D 8E 06  |....m...+...
+T...|
+400034F0 78 AC D9 25 D7 32 22 C5  85 96 20 7A 1B 23 78 6B  |x..%.2"... z
+.#xk|[APP_MAIN] TEXTO RECEBIDO DECIFRADO: 
+
+400034D0                                      74 68 65 20  |,,...5.@.5.@
+the |
+400034E0 71 75 69 63 6B 20 62 72  6F 77 6E 20 66 6F 78 20  |quick brown 
+fox |
+400034F0 6A 75 6D 70 73 20 6F 76  65 72 20 74 68 65 20 6C  |jumps over t
+he l|--------------------------------- FIM -----------------------------
+----
+[VERIFICACAO]: PASSOU Texto decifrado BATE com o original.
+[TDES_DRIVER]: Closing driver
+
+*** HALT (0) - no error

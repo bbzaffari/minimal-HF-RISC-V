@@ -1,13 +1,3 @@
-# to install ghdl and gtkwave:
-#
-# sudo apt install gnat
-# git clone https://github.com/ghdl/ghdl.git
-# cd ghdl-master
-# ./configure --prefix=/usr/local
-# make
-# sudo make install
-# sudo apt install gtkwave
-
 TOP = tb
 
 VHDL_BASE = ../..
@@ -23,9 +13,27 @@ VHD_SRC = \
 	$(VHDL_BASE)/riscv/core_rv32e/cpu.vhd \
 	$(VHDL_BASE)/devices/controllers/uart/uart.vhd \
 	$(VHDL_BASE)/devices/peripherals/basic_soc.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/add_key.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/add_left.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/e_expansion_function.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/key_schedule.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s1_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s2_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s3_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s4_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s5_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s6_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s7_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s8_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/p_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/s_box.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/block_top.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/des_top.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/des_cipher_top.vhd \
+	$(VHDL_BASE)/devices/controllers/tdes/tdes_top.vhd \
 	$(VHDL_BASE)/riscv/sim/boot_ram.vhd \
 	$(VHDL_BASE)/riscv/sim/ram.vhd \
-	$(VHDL_BASE)/riscv/sim/hf-riscv_basic_standard_soc_tb.vhd
+	$(VHDL_BASE)/riscv/sim/tdes_tb.vhd
 
 PROG_SRC = \
 	$(SRC_BASE)/riscv/sim/boot.txt \
@@ -33,29 +41,8 @@ PROG_SRC = \
 	
 TIME = 1ms
 
+
 all:
-
-# Command line simulation using ModelSim
-# run simulation with 'make modelsim-top TIME=10ms' to run for 10ms
-modelsim:
-	@ cp $(PROG_SRC) .
-	vlib mylib
-	vmap work ./mylib
-	vcom -work mylib $(VHD_SRC)
-
-modelsim-top: modelsim
-	vsim $(GUI) mylib.$(TOP) -c -do "vcd file ${TOP}.vcd -compress; vcd add /*; run ${TIME}; quit"
-	
-modelsim-all: modelsim
-	vsim $(GUI) mylib.$(TOP) -c -do "vcd file ${TOP}.vcd -compress; vcd add -r /*; run ${TIME}; quit"
-	
-modelsim-cpu: modelsim
-	vsim $(GUI) mylib.$(TOP) -c -do "vcd file ${TOP}.vcd -compress; vcd add -r /tb/processor/*; run ${TIME}; quit"
-
-modelsim-wave: modelsim
-	vsim $(GUI) mylib.$(TOP) -do "add wave -r /*; run ${TIME};"
-
-
 # Command line simulation using the free ghdl
 # run simulation with 'make ghdl-vcd TIME=10ms' to run for 10ms
 ghdl:

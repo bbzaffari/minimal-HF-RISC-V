@@ -1,0 +1,91 @@
+v 4
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/sim/tdes_tb.vhd" "4bfd820f7995c316dfbb778dbffb7b40c254ff4b" "20250627221320.283":
+  entity tb at 1( 0) + 0 on 69;
+  architecture tb of tb at 17( 371) + 0 on 70;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/sim/ram.vhd" "5458b2548462a5413c3d9110df2e4bb7ede7a706" "20250627221320.267":
+  entity bram at 1( 0) + 0 on 67;
+  architecture memory of bram at 23( 724) + 0 on 68;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/sim/boot_ram.vhd" "89f546dee8bb6313fea009eae7dfa3c1328787cd" "20250627221320.266":
+  entity boot_ram at 1( 0) + 0 on 65;
+  architecture memory of boot_ram at 23( 732) + 0 on 66;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/tdes_top.vhd" "2c75d76548038e2f4b0ec6bf5756297aff097311" "20250627221320.265":
+  entity tdes_top at 62( 2481) + 0 on 63;
+  architecture tdes_top of tdes_top at 106( 3424) + 0 on 64;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/des_cipher_top.vhd" "b0b3208f265fc85d495d452468a793aaefa7d9e3" "20250627221320.257":
+  entity des_cipher_top at 62( 2545) + 0 on 61;
+  architecture des_cipher_top of des_cipher_top at 90( 3427) + 0 on 62;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/des_top.vhd" "8b734442fca7bad9fe1da875d8e15f8caff2c7d6" "20250627221320.249":
+  entity des_top at 62( 2538) + 0 on 59;
+  architecture des_top of des_top at 89( 3462) + 0 on 60;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/block_top.vhd" "41192bca786388a18577efd72cd90f857dfd7e54" "20250627221320.237":
+  entity block_top at 63( 2541) + 0 on 57;
+  architecture block_top of block_top at 90( 3055) + 0 on 58;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s_box.vhd" "df545c0a87d0bd986ab7f24c151efc298de4d51b" "20250627221320.233":
+  entity s_box at 63( 2537) + 0 on 55;
+  architecture s_box of s_box at 89( 3421) + 0 on 56;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/p_box.vhd" "977af656f52ea137b61874fe9519c508a52e16d8" "20250627221320.227":
+  entity p_box at 63( 2537) + 0 on 53;
+  architecture p_box of p_box at 82( 3070) + 0 on 54;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s8_box.vhd" "1f3734e90b2d7c74be0613803a2554f1b967f3de" "20250627221320.218":
+  entity s8_box at 63( 2538) + 0 on 51;
+  architecture s8_box of s8_box at 74( 2761) + 0 on 52;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s7_box.vhd" "90ac33abf91ddfdb8d0f3089068920142b270327" "20250627221320.208":
+  entity s7_box at 63( 2538) + 0 on 49;
+  architecture s7_box of s7_box at 74( 2761) + 0 on 50;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s6_box.vhd" "0775586c2813505b614d1e3afe8d79c50148d420" "20250627221320.199":
+  entity s6_box at 63( 2538) + 0 on 47;
+  architecture s6_box of s6_box at 74( 2761) + 0 on 48;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s5_box.vhd" "dfec55820c76ca3dda99fa10a96ef508d2f9a0ef" "20250627221320.193":
+  entity s5_box at 63( 2538) + 0 on 45;
+  architecture s5_box of s5_box at 74( 2761) + 0 on 46;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s4_box.vhd" "13de390a610ef813693b21a0102b9cff73387654" "20250627221320.180":
+  entity s4_box at 63( 2538) + 0 on 43;
+  architecture s4_box of s4_box at 74( 2761) + 0 on 44;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s3_box.vhd" "d5c7e8c891de0c479705ccef0c9dfeaf7cdcfce6" "20250627221320.172":
+  entity s3_box at 63( 2538) + 0 on 41;
+  architecture s3_box of s3_box at 74( 2761) + 0 on 42;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s2_box.vhd" "b9237c9fccee1b1e528f492aa8cdba559bd67734" "20250627221320.163":
+  entity s2_box at 63( 2538) + 0 on 39;
+  architecture s2_box of s2_box at 74( 2761) + 0 on 40;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/s1_box.vhd" "cd63589040e97534607917fe7f47928196b41f59" "20250627221320.161":
+  entity s1_box at 63( 2538) + 0 on 37;
+  architecture s1_box of s1_box at 74( 2761) + 0 on 38;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/key_schedule.vhd" "273d192a2c3ca994ce6f8ff4ab05fb859f25b455" "20250627221320.157":
+  entity key_schedule at 63( 2544) + 0 on 35;
+  architecture key_schedule of key_schedule at 83( 3136) + 0 on 36;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/e_expansion_function.vhd" "a992c6443662cefcb3deadb16fe5a00193c1d2b2" "20250627221320.141":
+  entity e_expansion_function at 63( 2552) + 0 on 33;
+  architecture e_expansion_function of e_expansion_function at 82( 3132) + 0 on 34;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/add_left.vhd" "437df1ae4e5ab9fc9fa9e9588fd20033e3c67d28" "20250627221320.133":
+  entity add_left at 63( 2540) + 0 on 31;
+  architecture add_left of add_left at 76( 2816) + 0 on 32;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/tdes/add_key.vhd" "2a183eabba806557b6159e35655e62b151b7429e" "20250627221320.124":
+  entity add_key at 63( 2539) + 0 on 29;
+  architecture add_key of add_key at 91( 3402) + 0 on 30;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/peripherals/basic_soc.vhd" "5d8074801bd3907f95180469966d2c8c0e67e59b" "20250627221320.113":
+  entity peripherals at 10( 341) + 0 on 27;
+  architecture peripherals_arch of peripherals at 34( 1031) + 0 on 28;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../devices/controllers/uart/uart.vhd" "ccf405317acd93caad973e7bc8c92b563d1ffe7c" "20250627221320.111":
+  entity uart at 1( 0) + 0 on 25;
+  architecture logic of uart at 22( 524) + 0 on 26;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/core_rv32e/cpu.vhd" "473b3d13423e5d024f5f0012595402e05d52aac4" "20250627221320.072":
+  entity processor at 1( 0) + 0 on 23;
+  architecture arch_processor of processor at 24( 555) + 0 on 24;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/core_rv32e/int_control.vhd" "3a0f09c552cc99efb2a54d2af921f01adce18f4c" "20250627221320.072":
+  entity interrupt_controller at 1( 0) + 0 on 21;
+  architecture arch_interrupt_controller of interrupt_controller at 38( 1076) + 0 on 22;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/core_rv32e/datapath.vhd" "75b919d99b62e514fe0745cdab656f9192a35d82" "20250627221320.070":
+  entity datapath at 1( 0) + 0 on 19;
+  architecture arch_datapath of datapath at 31( 764) + 0 on 20;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/core_rv32e/control.vhd" "521a96bc517df0d0e738f38f4d7f327c7f3a01dc" "20250627221320.068":
+  entity control at 21( 929) + 0 on 17;
+  architecture arch_control of control at 41( 1565) + 0 on 18;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/core_rv32e/reg_bank.vhd" "c6ae3b6d39edfa9521e1a26b56213a3dcf142d72" "20250627221320.066":
+  entity reg_bank at 1( 0) + 0 on 15;
+  architecture arch_reg_bank of reg_bank at 17( 467) + 0 on 16;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/core_rv32e/alu.vhd" "94e23fa8f1338542bbaa2861010252142f2e8607" "20250627221320.065":
+  entity alu at 1( 0) + 0 on 13;
+  architecture arch_alu of alu at 15( 336) + 0 on 14;
+file "/home/minimo-hf-risc/sim/rv32e_basic/" "../../riscv/core_rv32e/bshifter.vhd" "4de8a84627c43531a13423d4c56faf953ef49e7c" "20250627221320.044":
+  entity bshift at 1( 0) + 0 on 11;
+  architecture logic of bshift at 13( 378) + 0 on 12;
